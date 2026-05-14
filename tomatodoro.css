@@ -1,91 +1,127 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
-body{
-    background-color: #FAF9F6;
-    transition: background-color 0.3s ease-in-out;
+body {
+    background-color: #f1c0c0;
 }
 
-a, li{
-    color: red;
-    text-decoration: none;
+header{
+    height: 12vh;
 }
 
-ul{
-    color: red;
-    list-style: none;
-}
-
-.site-logo img{
-    width: 2%;
-}
-
-.options-box{
+.navbar-desktop {
+    position: fixed;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    gap: 16px;
-    align-items: flex-start;
-}
-
-.options-box h2, 
-.options-box h3 {
-    flex-basis: 100%;
-    margin-bottom: 10px;
-    transition: color 0.2s ease;
+    align-items: center;             
+    justify-content: space-between;  
+    background-color: white;
+    padding: 10px;
+    width: 100%;
     font-family: 'Poppins';
-    line-height: 0.5;
+    z-index: 999;
 }
 
-.option1, .option2, .option3 {
+.site-logo {
+    display: flex;
+    justify-content: flex-start;               
+}
+
+.site-logo img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.nav-list-pc {
+    display: flex;
+    gap: 55px;                     
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;        
+    flex: 1;                          
+}
+
+.nav-list-pc li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.4s ease-in-out;
+}
+
+.nav-list-pc li a:hover {
+    color: red;
+}
+
+.homepage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;          /* espaço entre texto e imagem */
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+}
+
+/* Coluna esquerda */
+.homepage-left-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    height: auto; 
-    padding: 120px 20px;
-    width: 200px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s, border 0.1s;
+    gap: 20px;
+    max-width: 400px;
+    background-color: white;
+    padding: 50px 30px;
     font-family: 'Poppins';
 }
 
-.option1{
+/* H1 grande */
+.homepage-left-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* H3 menor */
+.homepage-left-content h3 {
+    font-size: 1.5em;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+/* Botões lado a lado */
+.button-group {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Botões */
+.homepage-button {
+    padding: 10px 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #dd1e1e;
+    color: white;
+    transition: 0.3s;
+}
+
+.homepage-button:hover {
     background-color: red;
     color: white;
 }
 
-.option2{
-    background-color: yellow;
-    color: black;
-}
-
-.option3{
-    background-color: rgb(18, 199, 18);
-    color: white;
-}
-
-.option1:hover, .option2:hover, .option3:hover{
-    transform: scale(1.1);
-    box-shadow: 0 50px 50px rgba(0,0,0,0.2);
-}
-
-.option1:hover{
-    border: 2px solid rgba(201, 3, 3, 0.748);
-    color: rgb(139, 5, 5);
-}
-
-.option2:hover{
-    border: 2px solid rgba(207, 207, 9, 0.841);
-    color: rgb(146, 146, 4);
-}
-
-.option3:hover{
-    border: 2px solid rgba(2, 137, 2, 0.819);
-    color: rgb(8, 100, 8);
+/* Coluna direita (imagem) */
+.homepage-right-content img {
+    width: 100%;
+    max-width: 500px; /* limite da imagem */
+    height: auto;
 }
