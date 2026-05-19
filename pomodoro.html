@@ -111,6 +111,27 @@
             habilidades como Front-End Developer para possíveis contratantes.
         </p>
     </section>
+
+ <section class="pomodoro-app" id="pomodoro-app" style="display: none; padding: 40px; text-align: center;">
+        <span class="section-sticker">Cronômetro</span>
+        <h2 id="timer-status">Pronto para começar?</h2>
+        
+      
+        <div class="timer-display" style="font-size: 4rem; font-family: 'Poppins', sans-serif; font-weight: 700; margin: 20px 0;">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+      
+        <div class="timer-setup" id="timer-setup">
+            <label for="user-time" style="font-family: 'Nunito', sans-serif; margin-right: 10px;">Definir tempo de foco:</label>
+            <input type="time" id="user-time" value="00:25" style="padding: 5px; font-family: 'Poppins', sans-serif;">
+        </div>
+
+        <div class="button-group" style="margin-top: 20px; display: flex; justify-content: center; gap: 15px;">
+            <button id="btn-start" onclick="initPomodoro()" class="homepage-button">Iniciar Foco <i class="fa fa-play"></i></button>
+            <button id="btn-pause" onclick="pauseTimer()" class="homepage-button" style="display: none;">Pausar <i class="fa fa-pause"></i></button>
+            <button id="btn-reset" onclick="resetTimer()" class="homepage-button" style="background-color: #555; display: none;">Resetar <i class="fa fa-refresh"></i></button>
+        </div>
+    </section>
 </body>
 
 </html>
