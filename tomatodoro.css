@@ -850,6 +850,21 @@ header {
         width: 100%;
 
     }
+    
+    .pomodoro-description {
+      width: 100%;
+    }
+    
+    .timer-img {
+      display: none;
+    }
+    
+    .timer-setup {
+      width: 70%;
+      height: 20vh;
+      font-size: 1.5em;
+      gap: 10px;
+    }
 
 
 }
