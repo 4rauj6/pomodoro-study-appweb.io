@@ -412,6 +412,6 @@ sidebarTriggerBtn.addEventListener('click', function () {
 
   icon.classList.toggle('fa-bars');
 
-  icon.classList.toggle('fa-xmark');
+  icon.classList.toggle('fa-times');
 
 });
