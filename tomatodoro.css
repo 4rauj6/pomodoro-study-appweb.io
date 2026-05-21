@@ -659,7 +659,7 @@ header {
 
         position: fixed;
 
-        top: 80px;
+        top: 55px;
 
         display: flex;
 
@@ -671,7 +671,7 @@ header {
 
         width: 50%;
 
-        border-radius: 20px;
+        border-radius: 0 20px 20px 0;
 
         animation: slideToLeft 0.2s ease-in-out forwards;
 
@@ -776,6 +776,7 @@ header {
         margin: 0 auto;
 
         width: 100%;
+        line-height: 1;
 
     }
 
@@ -783,7 +784,8 @@ header {
 
     .homepage-left-content h1 {
 
-        font-size: 3em;
+        font-size: 1.7em;
+        width: 100%;
 
     }
 
@@ -791,13 +793,21 @@ header {
 
     .homepage-left-content h3 {
 
-        font-size: 1.5em;
+        font-size: 1em;
 
         text-align: center;
 
         width: 100%;
 
         display: block;
+
+    }
+
+    .homepage-left-content p {
+
+        font-size: 1em;
+
+        width: 100%;
 
     }
 
@@ -833,6 +843,13 @@ header {
 
     }
 
+    #know-about-pomodoro h1 {
+
+        font-size: 1.1em;
+        width: 100%;
+
+    }
+
 
 
     .section-sticker-2 {
@@ -844,26 +861,32 @@ header {
     }
 
 
-
     .about-project {
-
         width: 100%;
+        font-size: 12px;
+    }
 
+    .about h1 {
+        font-size: 1.1em;
     }
-    
+
     .pomodoro-description {
-      width: 100%;
+        width: 100%;
+        font-size: 15px;
     }
-    
+
     .timer-img {
-      display: none;
+        display: none;
     }
-    
+
     .timer-setup {
-      width: 70%;
-      height: 20vh;
-      font-size: 1.5em;
-      gap: 10px;
+        width: 70%;
+        font-size: 1em;
+        gap: 1px;
+    }
+
+    .button-control-group {
+        flex-direction: column;
     }
 
 
