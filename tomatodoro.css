@@ -596,13 +596,15 @@ header {
 
     display: block;
 
-    padding: 5px;
+    padding: 10px;
 
   }
 
   
 
   .nav-mobile-button button {
+
+    position: fixed;
 
     border: none;
 
@@ -648,6 +650,10 @@ header {
 
   .navbar-desktop.active {
 
+    position: fixed;
+
+    top: 80px;
+
     display: flex;
 
     flex-direction: column;
@@ -656,7 +662,7 @@ header {
 
     align-items: flex-start;
 
-    width: 30%;
+    width: 50%;
 
     border-radius: 20px;
 
@@ -739,5 +745,107 @@ header {
   }
 
   
+
+  .homepage {
+
+    display: flex;
+
+    height: 70vh;
+
+  }
+
+  
+
+  .homepage-left-content {
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    width: 100%;
+
+  }
+
+  
+
+  .homepage-left-content h1 {
+
+    font-size: 3em;
+
+  }
+
+  
+
+  .homepage-left-content h3 {
+
+    font-size: 1.5em;
+
+    text-align: center;
+
+    width: 100%;
+
+    display: block;
+
+}
+
+  
+
+  .homepage-right-content {
+
+    display: none;
+
+  }
+
+}
+
+
+
+.button-group {
+
+  flex-direction: column;
+
+  text-align: center;
+
+}
+
+
+
+.homepage-button {
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+#know-about-pomodoro {
+
+  border-radius: 30px;
+
+}
+
+
+
+.section-sticker-2 {
+
+  font-size: 1em;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.about-project {
+
+  width: 100%;
 
 }
