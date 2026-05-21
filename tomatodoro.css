@@ -30,7 +30,7 @@ header {
 
 .nav-mobile-button {
 
-  display: none;
+    display: none;
 
 }
 
@@ -470,9 +470,9 @@ header {
 
 .pomodoro-app {
 
-    display: none; 
+    display: none;
 
-    padding: 40px; 
+    padding: 40px;
 
     text-align: center;
 
@@ -492,7 +492,10 @@ header {
 
 .timer-display {
 
-    font-size: 4rem; font-family: 'Poppins', sans-serif; font-weight: 700; margin: 20px 0;
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
 
 }
 
@@ -524,7 +527,8 @@ header {
 
 .timer-setup label {
 
-    font-family: 'Nunito', sans-serif; margin-right: 10px;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 10px;
 
 }
 
@@ -532,7 +536,8 @@ header {
 
 .timer-setup input {
 
-    padding: 5px; font-family: 'Poppins';
+    padding: 5px;
+    font-family: 'Poppins';
 
     border-radius: 5px;
 
@@ -546,15 +551,15 @@ header {
 
     padding: 10px;
 
-    border-radius: 20px; 
+    border-radius: 20px;
 
-    display: flex; 
+    display: flex;
 
     justify-content: center;
 
     align-items: center;
 
-    margin: 0 auto; 
+    margin: 0 auto;
 
     gap: 30px;
 
@@ -574,13 +579,15 @@ header {
 
     display: none;
 
-    background-color: transparent; border: solid 2px red; color: red;
+    background-color: transparent;
+    border: solid 2px red;
+    color: red;
 
 }
 
 
 
-#btn-reset:hover{
+#btn-reset:hover {
 
     background-color: red;
 
@@ -592,257 +599,257 @@ header {
 
 @media (max-width: 768px) {
 
-  .nav-mobile-button {
+    .nav-mobile-button {
 
-    display: block;
+        display: block;
 
-    padding: 10px;
-
-  }
-
-  
-
-  .nav-mobile-button button {
-
-    position: fixed;
-
-    border: none;
-
-    color: red;
-
-    font-size: 2em;
-
-    background-color: white;
-
-    width: 10%;
-
-    height: 5vh;
-
-    border-radius: 10px;
-
-  }
-
-  
-
-  .fa-xmark {
-
-    color: red;
-
-  }
-
-  
-
-  .site-logo {
-
-    display: none;
-
-  }
-
-  
-
-  .navbar-desktop {
-
-    display: none;
-
-  }
-
-  
-
-  .navbar-desktop.active {
-
-    position: fixed;
-
-    top: 80px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: flex-start;
-
-    width: 50%;
-
-    border-radius: 20px;
-
-    animation: slideToLeft 0.2s ease-in-out forwards;
-
-  }
-
-  
-
-  .navbar-desktop ul {
-
-    gap: 10px;
-
-    flex-direction: column;
-
-    padding: 5px;
-
-  }
-
-  
-
-  @keyframes slideToLeft {
-
-    from {
-
-      opacity: 0;
-
-      transform: translateX(-100%);
+        padding: 10px;
 
     }
 
-    to {
 
-      opacity: 1;
 
-      transform: translateX(0);
+    .nav-mobile-button button {
 
-    }
+        position: fixed;
 
-  }
+        border: none;
 
-  .navbar-desktop.close-trigger {
+        color: red;
 
-    display: flex;
+        font-size: 2em;
 
-    flex-direction: column;
+        background-color: white;
 
-    justify-content: center;
+        width: 10%;
 
-    align-items: flex-start;
+        height: 5vh;
 
-    width: 30%;
-
-    border-radius: 20px;
-
-    animation: closeAni 0.2s ease-in-out forwards;
-
-  }
-
-  
-
-  @keyframes closeAni {
-
-    from {
-
-      opacity: 1;
-
-      transform: translateX(0);
+        border-radius: 10px;
 
     }
 
-    to {
 
-      opacity: 0;
 
-      transform: translateX(-100%);
+    .fa-xmark {
+
+        color: red;
 
     }
 
-  }
 
-  
 
-  .homepage {
+    .site-logo {
 
-    display: flex;
+        display: none;
 
-    height: 70vh;
+    }
 
-  }
 
-  
 
-  .homepage-left-content {
+    .navbar-desktop {
 
-    flex-direction: column;
+        display: none;
 
-    justify-content: center;
+    }
 
-    align-items: center;
 
-    text-align: center;
 
-    margin: 0 auto;
+    .navbar-desktop.active {
 
-    width: 100%;
+        position: fixed;
 
-  }
+        top: 80px;
 
-  
+        display: flex;
 
-  .homepage-left-content h1 {
+        flex-direction: column;
 
-    font-size: 3em;
+        justify-content: center;
 
-  }
+        align-items: flex-start;
 
-  
+        width: 50%;
 
-  .homepage-left-content h3 {
+        border-radius: 20px;
 
-    font-size: 1.5em;
+        animation: slideToLeft 0.2s ease-in-out forwards;
 
-    text-align: center;
+    }
 
-    width: 100%;
 
-    display: block;
 
-}
+    .navbar-desktop ul {
 
-  
+        gap: 10px;
 
-  .homepage-right-content {
+        flex-direction: column;
 
-    display: none;
+        padding: 5px;
 
-  }
+    }
+
+
+
+    @keyframes slideToLeft {
+
+        from {
+
+            opacity: 0;
+
+            transform: translateX(-100%);
+
+        }
+
+        to {
+
+            opacity: 1;
+
+            transform: translateX(0);
+
+        }
+
+    }
+
+    .navbar-desktop.close-trigger {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: flex-start;
+
+        width: 30%;
+
+        border-radius: 20px;
+
+        animation: closeAni 0.2s ease-in-out forwards;
+
+    }
+
+
+
+    @keyframes closeAni {
+
+        from {
+
+            opacity: 1;
+
+            transform: translateX(0);
+
+        }
+
+        to {
+
+            opacity: 0;
+
+            transform: translateX(-100%);
+
+        }
+
+    }
+
+
+
+    .homepage {
+
+        display: flex;
+
+        height: 70vh;
+
+    }
+
+
+
+    .homepage-left-content {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+        margin: 0 auto;
+
+        width: 100%;
+
+    }
+
+
+
+    .homepage-left-content h1 {
+
+        font-size: 3em;
+
+    }
+
+
+
+    .homepage-left-content h3 {
+
+        font-size: 1.5em;
+
+        text-align: center;
+
+        width: 100%;
+
+        display: block;
+
+    }
+
+
+
+    .homepage-right-content {
+
+        display: none;
+
+    }
 
     .button-group {
 
-  flex-direction: column;
-  text-align: center;
+        flex-direction: column;
+        text-align: center;
 
-}
-
-
-
-.homepage-button {
-
-  justify-content: center;
-  align-items: center;
-    min-width: 200px;
-    padding: 10px 20px;
-
-}
-
-#know-about-pomodoro {
-
-  border-radius: 30px;
-
-}
+    }
 
 
 
-.section-sticker-2 {
+    .homepage-button {
 
-  font-size: 1em;
+        justify-content: center;
+        align-items: center;
+        min-width: 200px;
+        padding: 10px 20px;
 
-  margin-bottom: 10px;
+    }
 
-}
+    #know-about-pomodoro {
+
+        border-radius: 30px;
+
+    }
 
 
 
-.about-project {
+    .section-sticker-2 {
 
-  width: 100%;
+        font-size: 1em;
 
-}
+        margin-bottom: 10px;
+
+    }
+
+
+
+    .about-project {
+
+        width: 100%;
+
+    }
 
 
 }
