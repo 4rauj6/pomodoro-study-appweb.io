@@ -8,7 +8,7 @@ let initialFocoSeconds = 0;
 
 let isPaused = false;
 
-let currentMode = 'foco'; 
+let currentMode = 'foco';
 
 
 
@@ -34,7 +34,7 @@ btnStart.addEventListener('click', () => {
 
     if (isPaused) {
 
-        startCountdown(); 
+        startCountdown();
 
         timerStatus.innerText = currentMode.includes('foco') ? 'Foco total!' : 'Hora de relaxar';
 
@@ -100,7 +100,7 @@ function initPomodoro() {
 
 
 
-    if(!getTaskString){
+    if (!getTaskString) {
 
         alert('Por favor preencha todos os campos');
 
@@ -116,7 +116,7 @@ function initPomodoro() {
 
     const [minutes, seconds] = timeValue.split(':').map(Number);
 
-    
+
 
     totalSeconds = (minutes * 60) + seconds;
 
@@ -138,13 +138,13 @@ function initPomodoro() {
 
     timerStatus.innerText = "Foco total!";
 
-    
 
-    timerSetupDiv.style.display = 'none'; 
+
+    timerSetupDiv.style.display = 'none';
 
     toggleButtons(true);
 
-    updateDisplay(totalSeconds); 
+    updateDisplay(totalSeconds);
 
     startCountdown();
 
@@ -198,7 +198,7 @@ function checkTimeTriggers() {
 
         const metadeTempo = Math.floor(initialFocoSeconds / 2);
 
-        
+
 
         if (totalSeconds === metadeTempo) {
 
@@ -222,7 +222,7 @@ function startBreak(type) {
 
     timerStatus.innerText = "Hora de relaxar (Pausa de 15 min)";
 
-    totalSeconds = 15 * 60; 
+    totalSeconds = 15 * 60;
 
     updateDisplay(totalSeconds);
 
@@ -244,7 +244,7 @@ function handleTimerEnd() {
 
     } else if (currentMode === 'pausa-metade') {
 
-       
+
 
         alert("Pausa concluída! Voltando para o tempo restante de foco.");
 
@@ -328,7 +328,7 @@ function resetTimer() {
 
     currentMode = 'foco';
 
-    
+
 
     timerStatus.innerText = "Pronto para começar?";
 
@@ -336,7 +336,7 @@ function resetTimer() {
 
     secondsDisplay.innerText = "00";
 
-    
+
 
     timerSetupDiv.style.display = 'block';
 
@@ -384,34 +384,34 @@ const icon = document.querySelector('.fa-bars');
 
 sidebarTriggerBtn.addEventListener('click', function () {
 
-  const isSidebarOpen = sidebarToOpen.classList.contains('active');
+    const isSidebarOpen = sidebarToOpen.classList.contains('active');
 
-  
 
-  if(isSidebarOpen) {
 
-    sidebarToOpen.classList.add('close-trigger');
+    if (isSidebarOpen) {
 
-    
+        sidebarToOpen.classList.add('close-trigger');
 
-    setTimeout(() => {
 
-      sidebarToOpen.classList.remove('active');
 
-      sidebarToOpen.classList.remove('close-trigger');
+        setTimeout(() => {
 
-    }, 200);
+            sidebarToOpen.classList.remove('active');
 
-  }else {
+            sidebarToOpen.classList.remove('close-trigger');
 
-    sidebarToOpen.classList.add('active');
+        }, 200);
 
-  }
+    } else {
 
-  
+        sidebarToOpen.classList.add('active');
 
-  icon.classList.toggle('fa-bars');
+    }
 
-  icon.classList.toggle('fa-times');
+
+
+    icon.classList.toggle('fa-bars');
+
+    icon.classList.toggle('fa-times');
 
 });
