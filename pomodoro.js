@@ -185,3 +185,45 @@ function toggleButtons(running) {
         btnReset.style.display = 'none';
     }
 }
+
+const sidebarTriggerBtn = document.querySelector('.open-sidebar');
+
+const sidebarToOpen = document.querySelector('.navbar-desktop');
+
+const icon = document.querySelector('.fa-bars');
+
+
+
+sidebarTriggerBtn.addEventListener('click', function () {
+
+  const isSidebarOpen = sidebarToOpen.classList.contains('active');
+
+  
+
+  if(isSidebarOpen) {
+
+    sidebarToOpen.classList.add('close-trigger');
+
+    
+
+    setTimeout(() => {
+
+      sidebarToOpen.classList.remove('active');
+
+      sidebarToOpen.classList.remove('close-trigger');
+
+    }, 200);
+
+  }else {
+
+    sidebarToOpen.classList.add('active');
+
+  }
+
+  
+
+  icon.classList.toggle('fa-bars');
+
+  icon.classList.toggle('fa-xmark');
+
+});
